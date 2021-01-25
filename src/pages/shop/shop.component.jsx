@@ -21,12 +21,14 @@ import { fetchCollectionsStart } from '../../redux/shop/shop.action'
 //import { createStructuredSelector } from 'reselect'
 class ShopPage extends React.Component {
   componentDidMount() {
-    const { fetchCollectionsStart} = this.props;
+    const { fetchCollectionsStart } = this.props;
     fetchCollectionsStart();
+   
   }
 
   render() {
     const { match } = this.props;
+    console.log('im ok');
     return (
       <div className='shop-page'>
         <Route
